@@ -20,7 +20,8 @@ def main():
                 pygame.draw.line(screen, (0,50,255), (0, i * 32), (640, i * 32), 1) #draw rows
 
             screen.blit(mole_image, mole_image.get_rect(topleft= molepospix))
-
+            clock.tick(60)
+            
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
